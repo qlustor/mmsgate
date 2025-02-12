@@ -1,0 +1,18 @@
+name: flexisip-mmsgate
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-noble
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the flexisip-mmsgate Docker image
+      run: docker build . --file Dockerfile_mmsgate_install --tag my-image-name:$(date +%s)
