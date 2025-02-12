@@ -65,11 +65,11 @@ git clone https://github.com/RVgo4it/mmsgate --recursive -b main
 ```
 Build the first Docker image layer wih Flexisip:
 ```
-docker build -t flexisip -f mmsgate/Dockerfile_flexisip_install --build-arg="BRANCH=release/2.3" .
+docker build -t flexisip -f mmsgate/Dockerfile_flexisip_install --build-arg="BRANCH=release/2.4" .
 ```
 Build a layer for PJSIP.
 ```
-docker build -t pjsip -f mmsgate/Dockerfile_pjsip_install --build-arg="BRANCH=support-2.14.1" .
+docker build -t pjsip -f mmsgate/Dockerfile_pjsip_install --build-arg="BRANCH=support-2.15.1" .
 ```
 The build-args parameter in the last two commands can be altered to build different versions.  Be sure to use "docker system prune" to clear out the cache between versions.  
 
