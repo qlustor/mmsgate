@@ -4,7 +4,7 @@
 FROM flexisip as build
 
 # master or a supported branch
-ARG BRANCH=support-2.14.1
+ARG BRANCH=support-2.15.1
 
 MAINTAINER https://github.com/RVgo4it
 
