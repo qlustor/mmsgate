@@ -1,0 +1,18 @@
+name: flexisip-pjsip
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-noble
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the flexisip-pjsip Docker image
+      run: docker build . --file Dockerfile_pjsip_install --tag my-image-name:$(date +%s)
