@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # This builds a MMSgate image from the flexisip installed and pjsip installed images
-FROM pjsip
+FROM flexisip-pjsip
 
 MAINTAINER https://github.com/RVgo4it
 
