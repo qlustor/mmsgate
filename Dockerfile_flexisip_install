@@ -3,7 +3,7 @@
 FROM ghcr.io/linuxserver/baseimage-ubuntu:noble as build
 
 # master or other releases
-ARG BRANCH=release/2.3
+ARG BRANCH=release/2.4
 
 MAINTAINER https://github.com/RVgo4it
 
